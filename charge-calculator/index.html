@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bKash Limited</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/sowmmo_style.css">
+    <script src="https://kit.fontawesome.com/525f9347e5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/fav.png">
+    <script src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/webview_bridge.js"></script>
+    <script type="text/javascript" src="assets/sowmmo.js"></script>
+    
+    
+    <meta name="theme-color" content="#E2136E">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="assets/thumb.png">
+</head>
+    
+<body style="background-color: #white;" >
+
+<div class="container">
+<div class="jumbotron" style="background-color: white;">
+<div class="row" style="padding-top: 3%">
+    <div class="col-sm-12">
+        <p style="color: #464646;padding-top: 2%">বিকাশ চার্জ হিসাব করুন </p>
+         <hr>
+        <p style="color: #464646;font-size: 15px;float: left;">সেবা নির্বাচন করুন </p>
+        <img  id="service_icon" src="" style="float: right;">
+      <select id="mySelect" onchange="myFunction()" class="form-control">
+          <option value="free">ক্যাশ ইন</option>
+          <option value="snd_dial">সেন্ড মানি (*২৪৭#)</option>
+          <option value="snd_dial">সেন্ড মানি (অ্যাপ)</option>
+          <option value="c_agnt">ক্যাশ আউট ফ্রম এজেন্ট</option>
+          <option value="c_agnt_next">ক্যাশ আউট ফ্রম এজেন্ট উইথ অ্যাপ</option>
+          <option value="c_atm">ক্যাশ আউট ফ্রম এটিএম</option>
+          <option value="payment">পেমেন্ট (মার্চেন্ট)</option>
+          <option value="balance">চেক ব্যালেন্স</option>
+          <option value="statement">রিকোয়েস্ট স্টেটমেন্ট</option>
+          <option value="pin">চেইঞ্জ মোবাইল মেন্যু পিন</option>
+          <option value="remittance"> ইন্টারন্যাশনাল রেমিটেন্স গ্রহণ</option>
+          <option value="mobile_recharge"> মোবাইল রিচার্জ</option>
+          <option value="add_money"> ব্যাংক টু বিকাশ</option>
+          <option value="add_money">কার্ড থেকে বিকাশ</option>
+          <option value="b2b">ট্রান্সফার মানি (বিকাশ থেকে ব্যাংক)</option>
+          <option value="ekyc">একাউন্ট খুলুন</option>
+            </select>
+        <br>
+    </div>
+  
+    
+    <div class="col-sm-12" style="text-align: center;">
+        <div class="col-sm-12" style=": ;">
+        <h6 id="b_charge_text" style="display:none;">বিকাশ চার্জ</h6>
+        <h4 id="b_charge" class="bKash_color" style="display:none;">100</h4>
+        </div> 
+
+ 
+    <div style="display: none!important;">
+        <h6 id="charge_text" class="bKash_color" style="display: none;!important">ইনপুট করতে হবে </h6>
+         <h4 id="charge" class="bKash_color" style="display:none!important;"></h4>
+    </div>   
+
+
+
+    <p id="no_charge" class="bKash_color" style="display:none">কোনো চার্জ প্রযোজ্য নয় (ফ্রি)</p>
+        <center>
+            <img src="assets/free.svg" id="free_img" style="display: none;text-align: center;width: 30%;"></center>
+    </div>
+
+    <div class="col-sm-12" id="input_div" style="display:none;">
+     <input type="number" name="qwe12z" class="form-control" id="input" placeholder="টাকার পরিমাণ দিন" autocomplete="off">
+        </div>
+    
+    <div class="col-sm-12">
+        <br>
+    <p id="charge_notice" style="display:none;font-size:17px;font-weight: 400;">সঠিক টাকার পরিমান 10 থেকে 25,000 <br>10 থেকে 500 টাকা পর্যন্ত সেন্ড মানি করতে কোনো চার্জ নেই। 501 ও তার বেশি অ্যামাউন্টের ক্ষেত্রে প্রতি লেনদেনে 5 টাকা চার্জ প্রযোজ্য হবে।</p>
+    </div>
+ 
+</div>
+</div>
+</div>   
+<!-- Confirm Button-->        
+    <button type="button" class="btn btn_act" onclick="window.webViewJSBridge.goBackHome('Tickets')" >হোম-এ ফিরে যাই  <img src="assets/arrow.svg" style="float: right;margin-top: 1%"> </button> 
+    
+    <script src="assets/sowmmo.js">
+    </script>
+
+ 
+</body>
+</html>
